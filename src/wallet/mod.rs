@@ -131,14 +131,3 @@ pub struct Wallets {
         Ok(())
     }
 }
-
-// Prioritization 4.4
-/*
-The priority of the project is to learn about how blockchains work in an industry context.
-That is, implementing components and logic of professional quality.
-This was challenging, especially since at the end of the day, you must make your own design decisions.
-I decided to make it a priority to learn about the many different options that exist
-for designing different parts of the system, and not focus so much on if I am making the most
-optimal design decision, since this is supposed to be for learning and I do not plan to
-ship this project to production.
-*/
