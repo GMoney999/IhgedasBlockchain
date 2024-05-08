@@ -1,0 +1,18 @@
+{% for block in blocks %}
+<div class="block">
+    <p>Timestamp: {{ block.timestamp }}</p>
+    <p>Hash: {{ block.hash }}</p>
+    <p>Previous Block Hash: {{ block.prev_block_hash }}</p>
+    <p>Height: {{ block.height }}</p>
+    <p>Nonce: {{ block.nonce }}</p>
+
+    <details>
+        <summary>Transactions (Click to expand)</summary>
+        <ul>
+            {% for transaction in block.transactions %}
+            <li>{{ transaction }}</li>  <!-- Adjust this to display relevant transaction details -->
+            {% endfor %}
+        </ul>
+    </details>
+</div>
+{% endfor %}

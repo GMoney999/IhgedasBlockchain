@@ -1,0 +1,137 @@
+:root {
+    /* Colors */
+    --background-color: #222;  /* Dark grey background */
+    --text-color: #ddd;       /* Light grey for text */
+
+    /* Reds */
+    --light-red-1: #FF204E;
+    --light-red-2: #DA0037;
+    --light-red-3: #C70039;
+    --dark-red-1: #A0153E;
+
+    /* Grey */
+    --light-grey-1: #7F8487;
+    --light-grey-2: #999;
+    --dark-grey-1: #31363F;
+
+    --black: #171717;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background: fixed linear-gradient(to bottom, var(--dark-grey-1), var(--background-color)) no-repeat; /* Gradient from light grey to dark grey */
+    background-size: cover;
+    overflow: hidden;
+    color: var(--text-color);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.header {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header > h1 {
+    box-shadow: 0 8px 6px -6px var(--dark-red-1);
+    font-size: 4rem;
+}
+
+.header > p {
+    padding: 1rem;
+    margin: 3rem 0 0 0;
+    font-size: 2rem;
+}
+
+.login {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 75vh;
+    width: 100vw;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    height: 60vh;
+    border: .25rem solid var(--light-red-1);
+}
+
+.display > * {
+    padding: 1rem;
+}
+
+.block {
+    padding: 1rem;
+    font-size: 1.7rem;
+    border: .25rem solid var(--light-red-1);
+}
+
+.controller {
+    border: .25rem solid var(--light-red-1);
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
+#wallet-address strong {
+    color: var(--light-red-1);
+}
+
+#wallet-funds strong {
+    color: var(--light-red-1);
+}
+
+
+
+
+
+
+
+button {
+    color: var(--light-red-1);
+    padding: 1.5rem;
+    background: var(--background-color);
+    border: .1rem solid var(--light-red-1);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+button:hover {
+    color: var(--text-color);
+    background: var(--light-red-1);
+    border-color: var(--text-color);
+    border-width: 0.2rem;
+    top: -0.5rem;
+}
