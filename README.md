@@ -1,6 +1,5 @@
 # Ihgedas-Blockchain
 
-## Welcome to Ihgedas-Blockchain Demo
 This is a rudimentary blockchain implementation using Rust. It allows you to interact with a blockchain system through a command line interface.
 
 ### Features
